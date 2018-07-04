@@ -215,72 +215,6 @@ code {
     padding: 22px;
 }
 
-/*** utilies classes ***/
-.mb15 {
-    margin-bottom: 1.5em;
-}
-
-.mb30 {
-    margin-bottom: 3em;
-}
-
-.mb40 {
-    margin-bottom: 4em;
-}
-
-.mt15 {
-    margin-top: 1.5em;
-}
-
-.mt30 {
-    margin-top: 3em;
-}
-
-.mt40 {
-    margin-top: 4em;
-}
-
-.ml025 {
-    margin-left: 0.25em;
-}
-
-.ml15 {
-    margin-left: 1.5em;
-}
-
-.ml30 {
-    margin-left: 3em;
-}
-
-.ml40 {
-    margin-left: 4em;
-}
-
-.mr15 {
-    margin-right: 1.5em;
-}
-
-.mr30 {
-    margin-right: 3em;
-}
-
-.mr40 {
-    margin-right: 4em;
-}
-
-.noMargin {
-    margin: 0;
-}
-
-.noPaddingBottom {
-    padding-bottom: 0 !important;
-}
-
-.noPaddingTop {
-    padding-top: 0
-}
-
-/*** end utilies classes ***/
 
 /*** MEDIA QUERIES ***/
 
@@ -336,8 +270,7 @@ body {
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
     margin: 0;
-    padding: 0;
-    padding-top: 88px;
+    padding: 4rem 0 0;
 }
 
 h1, h2, h3, h4, h5, h6, legend {
@@ -405,9 +338,6 @@ h2 {
 }
 .jumbotron{
     background-color: #eee;
-}
-.navbar-brand{
-    align-self: flex-start;
 }
 h2.subTitle {
     font-size: 24px;
@@ -749,8 +679,11 @@ hr {
 }
 
 .navbar-brand {
-    padding-top: 30px;
-    padding-left: 0;
+    padding: 0;
+}
+.navbar-brand h2{
+    margin: 0;
+    color: #fff;
 }
 
 .fixedHeader {
@@ -769,6 +702,19 @@ hr {
 .fixedHeader .nav-brand {
     margin-top: 0.6em;
     width: 100px;
+}
+.header__github{
+    max-width: 149px;
+    width: 11%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 1;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.header__github img{
+    width: 100%;
 }
 
 /*** MEDIA QUERIES ***/
@@ -851,7 +797,7 @@ hr {
     .navbar-nav > li > a {
         padding-top: 0;
         padding-bottom: 0;
-        height: 88px;
+        height: 4rem;
     }
 
     #mainHeader #manifestoHeader .pull-right {
